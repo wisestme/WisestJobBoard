@@ -1,0 +1,9 @@
+﻿@model JobberGuys.ViewModels.RandomJobViewModel
+@{
+    ViewBag.Title = "Jobs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Job.Title</h2>
+
+@Model.Applicants
