@@ -1,9 +1,40 @@
 ﻿@model JobberGuys.ViewModels.RandomJobViewModel
 @{
-    ViewBag.Title = "Jobs";
+    ViewBag.Title = "Random Jobs";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>@Model.Job.Title</h2>
 
-@Model.Applicants
+<ul>
+    @foreach (var applicant in Model.Applicants)
+    {
+        <li>@applicant.FirstName</li>
+        <li>@applicant.id</li>
+    }
+</ul>
+
+@foreach (var applicant in Model.Applicants)
+{
+    <div class="row px-4 px text-center">
+        <div class="col p-2">@applicant.id</div>
+        <div class="col p-4 text-danger">@applicant.FirstName</div>
+
+    </div>
+}
+
+@if (Model.Applicants.Count == 0)
+{
+    <p>No one has applied for this job</p>
+}
+else
+{
+    foreach (var applicant in Model.Applicants)
+    {
+        <div class="row px-4 px text-center">
+            <div class="col p-2">@applicant.id</div>
+            <div class="col p-4 text-danger">@applicant.FirstName</div>
+
+        </div>
+    }
+}
