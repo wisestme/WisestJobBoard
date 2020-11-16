@@ -14,6 +14,7 @@ namespace JobberGuys.Controllers
         public ActionResult RandomJobs()
         {
             var job = new Job() { Title = "Web Developer" };
+
             var applicants = new List<Applicant>
             {
                 new Applicant {FirstName = "Applicant 1"},
@@ -24,10 +25,13 @@ namespace JobberGuys.Controllers
                 new Applicant {FirstName = "Applicant 6"}
             };
 
+            var admin = new Admin() { AdminName = "HRAdmin" };
+
             var viewModel = new RandomJobViewModel
             {
                 Job = job,
-                Applicants = applicants
+                Applicants = applicants,
+                Admin = admin
 
             };
             return View(viewModel);

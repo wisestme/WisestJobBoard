@@ -10,5 +10,6 @@ namespace JobberGuys.ViewModels
     {
         public Job Job { get; set; }
         public List<Applicant> Applicants;
+        public Admin Admin { get; set; }
     }
 }
