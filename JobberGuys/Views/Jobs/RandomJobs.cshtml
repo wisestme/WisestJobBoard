@@ -1,4 +1,5 @@
 ﻿@model JobberGuys.ViewModels.RandomJobViewModel
+
 @{
     ViewBag.Title = "Random Jobs";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -23,18 +24,22 @@
     </div>
 }
 
-@if (Model.Applicants.Count == 0)
-{
-    <p>No one has applied for this job</p>
-}
-else
-{
-    foreach (var applicant in Model.Applicants)
+<div class="row">
+    @if (Model.Applicants.Count == 0)
     {
-        <div class="row px-4 px text-center">
-            <div class="col p-2">@applicant.id</div>
-            <div class="col p-4 text-danger">@applicant.FirstName</div>
-
-        </div>
+        <p>No one has applied for this job</p>
     }
-}
+    else
+    {
+        foreach (var applicant in Model.Applicants)
+        {
+            <div class="text-center border border-primary">
+                <h2>@Model.Job.Title</h2>
+                <h3>@Model.Admin.AdminName</h3>
+                <div class="border border-primary text-info">@applicant.id</div>
+                <div class="col p-4 text-danger border border-primary">@applicant.FirstName</div>
+
+            </div>
+        }
+    }
+</div>
