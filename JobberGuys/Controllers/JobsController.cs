@@ -17,7 +17,11 @@ namespace JobberGuys.Controllers
             var applicants = new List<Applicant>
             {
                 new Applicant {FirstName = "Applicant 1"},
-                new Applicant {FirstName = "Applicant 2"}
+                new Applicant {FirstName = "Applicant 2"},
+                new Applicant {FirstName = "Applicant 3"},
+                new Applicant {FirstName = "Applicant 4"},
+                new Applicant {FirstName = "Applicant 5"},
+                new Applicant {FirstName = "Applicant 6"}
             };
 
             var viewModel = new RandomJobViewModel
