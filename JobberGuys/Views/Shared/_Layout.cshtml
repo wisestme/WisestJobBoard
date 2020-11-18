@@ -4,20 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @*@Styles.Render("~/Content/css")*@
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @*@Styles.Render("~/Content/fontawesome")*@
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body> 
     <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="my_container">
+            <nav class="row navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">WJB</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse"id="navbarContent">
+                <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="">Home</a>
@@ -35,8 +37,14 @@
                             <a class="nav-link" href="">Contact Us</a>
                         </li>
                     </ul>
+
+                </div>
+
+                <div class="d-none d-md-inline">
+                    @Html.Partial("_LoginPartial")
                 </div>
             </nav>
+
         </div>
         @RenderBody()
         <hr />
