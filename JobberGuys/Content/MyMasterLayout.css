@@ -42,6 +42,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+.jumbotron .intro {
+    text-shadow: 2px 2px #333
+}
+
 .test {
     border: 2px solid red;
 }
