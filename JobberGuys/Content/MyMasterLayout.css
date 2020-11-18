@@ -46,12 +46,16 @@ h6 {
     text-shadow: 2px 2px #333
 }
 
+.jumbotron form p:last-child {
+
+}
+
 .test {
     border: 2px solid red;
 }
 
 .input-group {
-    margin-bottom: 1em;
+    
     
 }
 
