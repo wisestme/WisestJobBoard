@@ -22,9 +22,47 @@ h6 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.my_container nav{
+    padding-top: 1em;
+}
+
 .jumbotron {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), rgba(117, 19, 93, 0.73)), url("../Images/recruitment.jpeg");
+    background-image: linear-gradient(135deg, rgba(19, 93, 117, 0.8), rgba(19, 93, 117, 0.4), rgba(19, 93, 117, 0.1)), url("../Images/recruitment.jpeg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 500px;
+}
+
+.jumbotron > .my_container {
+    padding-top: 2em;
+    height: 80%;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.test {
+    border: 2px solid red;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.jumbotron button,
+.input-group input {
+    width: 300px;
+}
+
+
+[class*="prepend"] {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+[class*="prepend"] .fa {
+    color: red;
+    font-size: 20px;
 }

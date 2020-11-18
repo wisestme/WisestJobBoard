@@ -2,32 +2,35 @@
     ViewBag.Title = "Home Page";
 }
 
-    <div class="jumbotron">
-        <h1>Find Job</h1>
-        <p class="lead">Wisest Job Board is the leading global recruitment agency, spelizing in matching talents with job oppurtunities.</p>
-        @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
-        <form class="row">
-            <div class="input-group col-md-6">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-angle-right"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="job title, keyword or company name" />
+    <div class="jumbotron d-flex align-items-center">
+        <div class="my_container d-flex flex-column justify-content-around align-items-center">
+            <div class="intro">
+                <h1>Find Job</h1>
+                <p class="lead">Wisest Job Board is the leading global recruitment agency, spelizing in matching talents with job oppurtunities.</p>
             </div>
-
-            <div class="input-group col-md-6">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-location-arrow"></i></span>
+            @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+            <form class="d-flex flex-column mt-3">
+                <div class="input-group col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-location-arrow"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="job title, keyword or company name" />
                 </div>
-                <input type="text" class="form-control" placeholder="job title, keyword or company name" />
-                @*<div class="input-group-append">
+
+                <div class="input-group col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-location-arrow"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="job title, keyword or company name" />
+                    @*<div class="input-group-append">
                     <span class="input-group-text"><i class="fa fa-search"></i></span>
                 </div>*@
-            </div>
-            <button><i class="fa fa-search"></i></button>
+                </div>
+                <button><i class="fa fa-search"></i></button>
 
-            <p>Browse job offers by <span>category</span> or <span>location</span></p>
-        </form>
-        
+                <p>Browse job offers by <span>category</span> or <span>location</span></p>
+            </form>
+        </div>   
     </div>
 
 <div class="row">
