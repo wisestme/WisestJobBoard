@@ -1,5 +1,5 @@
-﻿@import url(font-awesome.css);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+﻿/*@import url(font-awesome.css);*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);*/
 
 body {
     margin: 0;
@@ -48,21 +48,23 @@ h6 {
 
 .input-group {
     margin-bottom: 1em;
+    
 }
 
-.jumbotron button,
-.input-group input {
-    width: 300px;
+#hero .input-group input {
+    width: 100%;
+   
 }
 
+.jumbotron button {
+    width: 200px;
+}
 
-[class*="prepend"] {
-    width: 40px;
-    display: flex;
-    justify-content: center;
+.jumbotron form {
+    width: 100%;
 }
 
 [class*="prepend"] .fa {
-    color: red;
+   
     font-size: 20px;
 }
