@@ -99,3 +99,12 @@ nav .navbar-right li {
     flex-direction: column;
     justify-content: space-around;
 }
+
+#categories i {
+    font-size: 30px;
+}
+
+#categories button {
+    max-width: 300px;
+    margin: 0 auto;
+}
